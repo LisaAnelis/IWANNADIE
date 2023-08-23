@@ -1,0 +1,121 @@
+
+
+/* General */
+
+body {
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  background-color: #c2e6e8;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button,
+button:active {
+  background-color: rgb(186,111,77);
+  border: none;
+  width: 42px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0.2em 0.2em rgb(142,65,46);
+  -webkit-box-shadow: 0.2em 0.2em rgb(142,65,46);
+  -moz-box-shadow: 0.2em 0.2em rgb(142,65,46);
+}
+
+button:focus {
+  translate: 0.2em 0.2em;
+  box-shadow: 0.2em 0.2emrgb(142,65,46) inset;
+  -webkit-box-shadow: 0.2em 0.2em rgb(142,65,46) inset;
+  -moz-box-shadow: 0.2em 0.2em rgb(142,65,46) inset;
+}
+
+/* Clock Body */
+
+.clock-container {
+  background-color: rgb(162,161,130); 
+  width: 350px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px #687259;
+}
+
+/* Display + Stop/Start/Reset Controls */
+
+#time-left {
+  font-size: 70px;
+  text-align: center;
+  background-color: rgb(221,190,169);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgb(199,149,114) inset;
+}
+
+#display-controls {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#timer-label {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 2px;
+  background-color: rgb(221,190,169);
+  border-radius: 10px;
+  height: 40px;
+  flex: 2;
+  box-shadow: 3px 3px rgb(199,149,114) inset;
+}
+
+#timer-ssr {
+  flex: 1;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-start: end;
+}
+
+/* Timer Length Controls */
+
+.length-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inc-dec-btn-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 140px;
+  height:60px;
+}
+
+.break-container, 
+.session-container {
+  text-align: center;
+/*   display: inline-block; */
+  border: 2px solid rgb(234,178,156);
+  padding: 10px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+.timer-length {
+  font-size: 2em;
+}
+
+.break-container,
+.inc-arrow {
+  margin-right: 12px;
+}
